@@ -27,8 +27,17 @@
     a {
       color: #fff;
     }
-    .bi {
-      font-size: 2rem;
+    a:hover:not(.icon) {
+        color: #000;
+        background:#FFF;
+    }
+    ul {
+      list-style-type: none;
+      margin: 0px;
+      padding:0px;
+    }
+    .icon {
+        font-size:2rem;
     }
   </style>
 </head>
@@ -44,12 +53,20 @@
         <p>I'm a developer from Sweden. <br>Doing my thing at <a href="https://personalkollen.se">Personalkollen</a>.</p>
         <p></p>
       </div>
-      <div class="col-sm-12">
-        <a href="https://t.me/dunderrrrrr"><i class="bi bi-telegram"></i></a>
-        <a href="https://github.com/dunderrrrrr"><i class="bi bi-github"></i></a>
-        <a href="mailto:emil[dot]bjorkroth[at]gmail[dot]com"><i class="bi bi-envelope-open-fill"></i></a>
-        <a href="https://www.linkedin.com/in/emil-bjorkroth/"><i class="bi bi-linkedin"></i></a>
+      <div class="col-sm-12 mt-1 mb-2">
+          <a class="icon" href="https://github.com/dunderrrrrr" target="_blank"><i class="bi bi-github"></i></a>
+        <a class="icon" href="https://t.me/dunderrrrrr" target="_blank"><i class="bi bi-telegram"></i></a>
+        <a class="icon" href="mailto:emil[dot]bjorkroth[at]gmail[dot]com"><i class="bi bi-envelope-open-fill"></i></a>
+        <a class="icon" href="https://www.linkedin.com/in/emil-bjorkroth/" target="_blank"><i class="bi bi-linkedin"></i></a>
       </div>
+    </div>
+    <div class="col-sm-12 mt-2">
+        <ul>
+            <li><a href="https://swarje.dunderrrrrr.se"" target="_blank">swarje.dunderrrrrr.se</a></li>
+            <li><a href="https://bada.dunderrrrrr.se"" target="_blank">bada.dunderrrrrr.se</a></li>
+            <li><a href="https://mat.dunderrrrrr.se"" target="_blank">mat.dunderrrrrr.se</a></li>
+            <li><a href="https://hotels.dunderrrrrr.se"" target="_blank">hotels.dunderrrrrr.se</a></li>
+        </ul>
     </div>
   </div>
 </body>
