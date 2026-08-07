@@ -12,7 +12,7 @@
         />
         <link
             rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/fontawesome-4.7@4.7.0/css/font-awesome.min.css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
         />
         <style>
             *,
@@ -509,25 +509,25 @@
                 const social = [
                     {
                         name: "github",
-                        icon: "fa-github",
+                        icon: "fab fa-github",
                         sub: "github.com/dunderrrrrr",
                         url: "https://github.com/dunderrrrrr",
                     },
                     {
                         name: "deltachat",
-                        icon: "fa-commenting",
+                        icon: "fas fa-commenting",
                         sub: "encrypted p2p",
                         url: "https://i.delta.chat/#8D4471513633B127A7F39BACA8460BF48508220E&a=z0p7bjovj%40nine.testrun.org&n=dunderrrrrr&i=vjTbIOUIDGUsZd5t3nj7nyZp&s=pLxXoPFep4G6-9YfWAO5t_uW",
                     },
                     {
                         name: "email",
-                        icon: "fa-envelope",
+                        icon: "fas fa-envelope",
                         sub: "protonmail",
                         url: "mailto:emil[dot]bjorkroth[at]proton[dot]me",
                     },
                     {
                         name: "linkedin",
-                        icon: "fa-linkedin-square",
+                        icon: "fab fa-linkedin",
                         sub: "in/emil-bjorkroth",
                         url: "https://www.linkedin.com/in/emil-bjorkroth/",
                     },
@@ -535,37 +535,43 @@
                 const projects = [
                     {
                         name: "brygglogg",
-                        icon: "fa-beer",
+                        icon: "fas fa-beer",
                         sub: "homebrewing log",
                         url: "https://brygglogg.dunderrrrrr.se",
                     },
                     {
+                        name: "chat.rosamjolk.se",
+                        icon: "fas fa-cow",
+                        sub: "deltachat relay",
+                        url: "https://chat.rosamjolk.se",
+                    },
+                    {
+                        name: "domänfluff",
+                        icon: "fas fa-tag",
+                        sub: "domain finder",
+                        url: "https://domänfluff.dunderrrrrr.se",
+                    },
+                    {
                         name: "tågpuls",
-                        icon: "fa-subway",
+                        icon: "fas fa-subway",
                         sub: "transit tracker",
                         url: "https://tagpuls.dunderrrrrr.se",
                     },
                     {
                         name: "swarje",
-                        icon: "fa-globe",
+                        icon: "fas fa-globe",
                         sub: "swedish word game",
                         url: "https://swarje.dunderrrrrr.se",
                     },
                     {
                         name: "städer",
-                        icon: "fa-map-marker",
+                        icon: "fas fa-map-marker",
                         sub: "city guessing",
                         url: "https://staeder.dunderrrrrr.se",
                     },
                     {
-                        name: "domänfluff",
-                        icon: "fa-tag",
-                        sub: "domain finder",
-                        url: "https://domänfluff.dunderrrrrr.se",
-                    },
-                    {
                         name: "wcwp",
-                        icon: "fa-steam",
+                        icon: "fab fa-steam",
                         sub: "steam game finder",
                         url: "https://wcwp.dunderrrrrr.se",
                     },
@@ -575,7 +581,7 @@
                     a.href = url;
                     if (!url.startsWith("mailto")) a.target = "_blank";
                     a.className = "link-item";
-                    a.innerHTML = `<div class="li-top"><i class="fa ${icon} li-icon"></i><span class="li-arrow">↗</span></div><div class="li-bottom"><span class="li-name" data-text="${name}">${name}</span><span class="li-sub">${sub}</span></div>`;
+                    a.innerHTML = `<div class="li-top"><i class="${icon} li-icon"></i><span class="li-arrow">↗</span></div><div class="li-bottom"><span class="li-name" data-text="${name}">${name}</span><span class="li-sub">${sub}</span></div>`;
                     return a;
                 };
                 const socialOut = document.getElementById("links-social");
